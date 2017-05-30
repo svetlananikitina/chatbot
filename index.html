@@ -36,8 +36,9 @@
   fetch(url)
   .then((resp) => resp.json()) // Transform the data into json       
   .then(function(data) {
+      console.log('Hey!');
     // Here you get the data to modify as you please
-      let authors = data.results;
+      /*let authors = data.results;
       
       return authors.map(function(author) { // Map through the results and for each run the code below
       let li = createNode('li'), //create elements we need to display
@@ -48,7 +49,7 @@
       span.innerHTML = `${author.name.first} ${author.name.last}`; // Make the HTML of our span to be the first and last name of our author
       append (li, img);
       append (li, span);
-      append (ul, li);
+      append (ul, li); */
     })
   })
   .catch(function(error) {
