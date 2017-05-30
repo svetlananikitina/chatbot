@@ -36,11 +36,15 @@
   fetch(url)
   .then((resp) => resp.json()) // Transform the data into json       
   .then(function(data) {
-      console.log(data);
-    // Here you get the data to modify as you please
-      /*let authors = data.results;
+     // console.log(data);
       
-      return authors.map(function(author) { // Map through the results and for each run the code below
+    // Here you get the data to modify as you please
+      let authors = data.results;
+
+      alert('here');
+      alert(authors);
+      
+     /* return authors.map(function(author) { // Map through the results and for each run the code below
       let li = createNode('li'), //create elements we need to display
           img = createNode('img'),
           span = createNode('span');
