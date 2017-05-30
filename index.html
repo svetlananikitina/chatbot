@@ -18,11 +18,23 @@
      /*document.getElementById("demo").innerHTML = x;*/
      alert("You typed "+ txtinput);
 }
+        
+        
+  function createNode(element) {
+      return document.createElement(element);
+  }
   
+  function append(parent, el) {
+    return parent.appendChild(el); // Append the second parameter(element) to the first one
+  }
+
   const ul = document.getElementById('txtinput'); // Get the text from field
   const url = 'https://randomuser.me/api/?results=10'; 
         
   fetch(url)
+  
+  .then((resp) => resp.json()) // Transform the data into json
+        
   .then(function(data) {
     // Here you get the data to modify as you please
     })
