@@ -31,12 +31,12 @@
   }
 
   const ul = document.getElementById('authors'); // Get the text from field
-  const url = 'https://randomuser.me/api/?results=10'; 
+  const url = 'https://api.wit.ai/message?v=20170531&q=%20I%E2%80%99m%20Valentina%20and%20i%20like%20math'; 
         
   fetch(url)
   .then((resp) => resp.json()) // Transform the data into json       
   .then(function(data) {
-     // console.log(data);
+      console.log(data);
       
     // Here you get the data to modify as you please
       let authors = data.results;
