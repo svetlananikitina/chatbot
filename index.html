@@ -62,7 +62,21 @@
   })
   .catch(function(error) {
     console.log(error);
-  });   
+  });  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+$.ajax({
+  url: 'https://api.wit.ai/message',
+  data: {
+    'q': 'Where can I see Zootopia tomorrow at 6pm?',
+    'access_token' : 'WAV5PBVERZHLB7G6VCLHAV37P4QMIWDI'
+  },
+  dataType: 'jsonp',
+  method: 'GET',
+  success: function(response) {
+      console.log("success!", response);
+  }
+});
     
 </script> 
 </head>
