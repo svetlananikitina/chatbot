@@ -66,7 +66,8 @@
     console.log(error);
   });  
   
-  
+  function myFunction2() {
+      alert("hi bot");
 $.ajax({
   url: 'https://api.wit.ai/message',
   data: {
@@ -79,6 +80,7 @@ $.ajax({
       console.log("success!", response);
   }
 });
+  }
      
 </script> 
 
@@ -102,6 +104,7 @@ $.ajax({
       <input type ="text" id="txtinput" placeholder="Type your message here">
 <p>  
     <input type ="button" onClick="myFunction()" id="idbtn" value="Start chat"> 
+    <input type ="button" onClick="myFunction2()" id="idbtn2" value="call bot"> 
 </p> 
 
  <h1>Authors</h1>
