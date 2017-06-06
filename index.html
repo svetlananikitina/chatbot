@@ -78,6 +78,8 @@ $.ajax({
   method: 'GET',
   success: function(response) {
       console.log("success!", response);
+  },error: function(response) {
+      console.log("error!");
   }
 });
   }
