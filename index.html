@@ -86,7 +86,7 @@ $.ajax({
    
    var div = document.createElement('div');
    div.setAttribute("id", "iID");
-   div.innerHTML = response.entities.intent.confidence;
+   div.innerHTML = response.entities.intent.value;
    document.body.appendChild(div);   
       
   },error: function(response) {
