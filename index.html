@@ -84,7 +84,7 @@ $.ajax({
       //print on the page: response.entities;
    var div = document.createElement('div');
    div.setAttribute("id", "iID");
-   div.innerHTML = response.entities;
+   div.innerHTML = response.msg_id;
    document.body.appendChild(div);   
       
   },error: function(response) {
