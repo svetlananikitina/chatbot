@@ -82,9 +82,12 @@ $.ajax({
       //append (p);
       //Update html
       //print on the page: response.entities;
+      <h2 id="response">Response</h2>
+      document.getElementById('response').innerHTML = "Bot response";
+       
    var div = document.createElement('div');
    div.setAttribute("id", "iID");
-   div.innerHTML = response.msg_id;
+   div.innerHTML = response.entities.intent.value;
    document.body.appendChild(div);   
       
   },error: function(response) {
