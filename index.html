@@ -75,11 +75,14 @@
   });  
   
   function myFunction2() {
-      alert("hi bot");
+
+      var txtinput = document.getElementById("txtinput").value;
+      alert("user asks:"+ txtinput);
 $.ajax({
   url: 'https://api.wit.ai/message',
   data: {
-    'q': 'I am from Trento',
+      'q': txtinput,
+    //'q': 'I am from Trento',
     'access_token' : 'WAV5PBVERZHLB7G6VCLHAV37P4QMIWDI'
   },
   dataType: 'jsonp',
@@ -124,8 +127,8 @@ $.ajax({
     
       <input type ="text" id="txtinput" placeholder="Type your message here">
 <p>  
-    <input type ="button" onClick="myFunction()" id="idbtn" value="Start chat"> 
-    <input type ="button" onClick="myFunction2()" id="idbtn2" value="call bot"> 
+    <input type ="button" onClick="myFunction()" id="idbtn" value="Read">
+    <input type ="button" onClick="myFunction2()" id="idbtn2" value="Call bot">
 </p> 
 
  <h1>Authors</h1>
